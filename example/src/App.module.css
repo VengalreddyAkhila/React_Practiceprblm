@@ -16,7 +16,7 @@ body{
   width: 100px;
 }
 
-.MainContainer{
+.MainConatiner{
   padding: 4% 12%;
   margin-top: 32px;
   box-sizing: border-box;
@@ -26,58 +26,17 @@ body{
 }
 .ProductPreview {
   width: 50%;
+  margin-top: 60px;
   position: relative;
-}
-
-.ProductPreview > img{
-  width: 100%;
-}
-.TimeSection{
-  position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  color: white;
-  font: 48px;
-  font-weight: 800;
-}
-
-.HeartBeatSection{
-  position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  color: white;
-  font: 48px;
-  font-weight: 800;
-}
-.HeartBeatSection > i {
-  color: red;
-  animation: beat 1s infinite;
-}
-@keyframes beat {
-  0%{
-    transform: scale(1,1);
-  }
-  50%{
-    transform: scale(1.2,1.2);
-  }
-  100%{
-    transform: scale(1,1);
-  }
-}
-
-.HeartBeatSection > p{
-  margin-top: 16px;
 }
 .ProductData{
   width: 50%;
 }
 .ProductTitle{
-  font-size: 48px;
+  font-size: 28px;
   font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 16px;
+  margin-top: 30px;
+  margin-bottom: 26px;
 }
 .ProductDescription{
   font-size: 20px;
