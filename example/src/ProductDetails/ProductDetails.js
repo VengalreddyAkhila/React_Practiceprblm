@@ -7,7 +7,7 @@ import classes from './ProductDetails.module.css'
    console.log(props.data)
    const colorOptions = props.data.colorOptions.map((item,pos) => {
       const classArr = [classes.ProductImage]
-      if(pos === 0){
+      if(pos === props.currentPreviewImagePos){
          classArr.push(classes.SelectProductImage);
       }
       return(
@@ -18,11 +18,14 @@ import classes from './ProductDetails.module.css'
 
    const featureList = props.data.featureList.map((item,pos) => {
       const classArr = [classes.FeatureItem];
-      if(pos === 0){
-         classArr.push(classes.SelectedFeaturedItem)
+
+      if(pos === props.currentSelectedFeature){
+         classArr.push(classes.SelectedFeatureItem)
+     
       }
+
       return(
-         <button key={pos} className={classArr.join(' ')}>{item}</button>
+         <button onClick={() => props.onFeatureItemClick(pos)} key={pos} className={classArr.join(' ')}>{item}</button>
       )
    })
 
